@@ -22,8 +22,8 @@ window.title("Shushi Plate Estimation")
 screen_width = window.winfo_screenwidth()
 screen_height = window.winfo_screenheight()
 
-window_width = 700
-window_height = 100
+window_width = 430
+window_height = 932
 
 x_position = (screen_width - window_width) // 2
 y_position = (screen_height - window_height) // 2
@@ -106,7 +106,7 @@ def main():
             )
             y_offset += 20
 
-        cv2.imshow("Classroom Monitoring", frame)
+        cv2.imshow("NUB JARN", frame)
 
         key = cv2.waitKey(30)
         if key == 27:  # ESC key
