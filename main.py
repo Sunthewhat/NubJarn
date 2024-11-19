@@ -7,8 +7,6 @@ from datetime import datetime
 import tkinter as tk
 import supervision as sv
 
-screenshot_interval = 2
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 amp = True
 
@@ -45,11 +43,6 @@ def start_detection():
     welcome_label.destroy()
     start_button.destroy()
     main()
-
-
-def send_alert(message, image_path):
-    print(f"Alert: {message}")
-    print(f"Image saved at: {image_path}")
 
 
 def main():
